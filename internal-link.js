@@ -7,6 +7,8 @@ var internalLinks = {
   "pendidikan formal": "/2023/09/pendidikan-formal.html",
   "kepala sekolah": "/2023/09/kepala-sekolah.html",
   "media pembelajaran": "/2023/09/media-pembelajaran.html",
+  "transformasi ilmu": "/2023/09/transformasi-ilmu.html",
+  "transfer pengetahuan": "/2023/09/transformasi-ilmu.html",
   // tambahkan lebih banyak kata kunci dan URL sesuai kebutuhan
 };
 
