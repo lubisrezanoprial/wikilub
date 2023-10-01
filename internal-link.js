@@ -15,11 +15,23 @@ var internalLinks = {
 document.addEventListener("DOMContentLoaded", function() {
   var articleContent = document.getElementById("post_body");
   if (articleContent) {
+    var usedKeywords = {}; // Membuat objek untuk melacak kata kunci yang sudah digunakan.
+    var contentHTML = articleContent.innerHTML; // Salin konten HTML untuk menghindari perubahan langsung.
+
     for (var keyword in internalLinks) {
       if (internalLinks.hasOwnProperty(keyword)) {
         var regex = new RegExp("\\b" + keyword + "\\b", "g");
-        articleContent.innerHTML = articleContent.innerHTML.replace(regex, '<a href="' + internalLinks[keyword] + '">' + keyword + '</a>');
+        contentHTML = contentHTML.replace(regex, function(match) {
+          if (!usedKeywords[match]) { // Cek apakah kata kunci sudah digunakan sebelumnya.
+            usedKeywords[match] = true; // Tandai kata kunci sebagai sudah digunakan.
+            return '<a href="' + internalLinks[keyword] + '">' + match + '</a>';
+          } else {
+            return match; // Jika kata kunci sudah digunakan, biarkan teks aslinya.
+          }
+        });
       }
     }
+
+    articleContent.innerHTML = contentHTML; // Setel konten HTML yang sudah dimodifikasi kembali ke elemen.
   }
 });
