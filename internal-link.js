@@ -7,8 +7,13 @@ var internalLinks = {
   "pendidikan formal": "/2023/09/pendidikan-formal.html",
   "kepala sekolah": "/2023/09/kepala-sekolah.html",
   "media pembelajaran": "/2023/09/media-pembelajaran.html",
+  "kurikulum": "/2023/10/kurikulum.html",
   "transformasi ilmu": "/2023/09/transformasi-ilmu.html",
   "transfer pengetahuan": "/2023/09/transformasi-ilmu.html",
+  "pendidikan non-formal": "/2023/10/pendidikan-non-formal.html",
+  "pendidikan kecakapan hidup": "/2023/10/pendidikan-kecakapan-hidup.html",
+  "pendidikan anak usia dini": "/2023/10/pendidikan-anak-usia-dini.html",
+  "PAUD": "/2023/10/pendidikan-anak-usia-dini.html",
   // tambahkan lebih banyak kata kunci dan URL sesuai kebutuhan
 };
 
